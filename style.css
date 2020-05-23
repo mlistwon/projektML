@@ -14,7 +14,7 @@ body{
 }
 
 img{
-    /* width: 80%; */
+    width: 80%;
     margin: auto;
     height: auto;
     box-shadow: 3px 3px 10px #333333, -3px 3px 10px #333333;
@@ -91,22 +91,6 @@ ul > li:hover>a{
     text-decoration: none;
 }
 
-/* pudlo{
-    width: fit-content;
-    background: red;
-} */
-
-obrazek_w_pudle{
-    position: relative;
-    overflow: hidden;
-    width:450px;
-    height: 300px;
-    background-image: url("obrazy/kot-sie-wpatruje.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    float: right;
-    margin: 10px;
-}
 
 footer{
     padding-top: 50px;
