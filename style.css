@@ -1,0 +1,115 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.tytul{
+    text-align: center;
+    position: relative;
+}
+
+body{
+    padding-top: 100px;
+    background-color: lightgray;
+}
+
+img{
+    /* width: 80%; */
+    margin: auto;
+    height: auto;
+    box-shadow: 3px 3px 10px #333333, -3px 3px 10px #333333;
+}
+.tekst{
+    font-size: 2.2vw ;
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+main{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 10px #333333, -3px 3px 10px #333333;
+}
+
+article{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    max-width: 80%;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.6rem;
+}
+
+.h1{
+    font-size: 2rem;
+    font: bold;
+}
+
+nav{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333333;
+    color: whitesmoke;
+    overflow: auto;
+    box-shadow: 3px 3px 10px #333333, -3px 3px 10px #333333;
+}
+
+ul{
+    list-style: none;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding-inline-start: unset;
+    padding-block-end: 65px;
+}
+ul>li{
+    float: left; 
+    position: relative;
+    width: 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #333333;
+    text-align: center;
+}
+
+ul>li:hover{
+    background-color:whitesmoke;
+}
+	
+ul > li > a {
+     color:whitesmoke;
+     text-decoration: none;
+}
+
+ul > li:hover>a{
+    color: #333333;
+    text-decoration: none;
+}
+
+/* pudlo{
+    width: fit-content;
+    background: red;
+} */
+
+obrazek_w_pudle{
+    position: relative;
+    overflow: hidden;
+    width:450px;
+    height: 300px;
+    background-image: url("obrazy/kot-sie-wpatruje.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: right;
+    margin: 10px;
+}
+
+footer{
+    padding-top: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+}
