@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kolkoikrzyzyk.css">
+    <meta name="author" content="Maria Listwon">
+    <title>Gra Kółko i Krzyżyk</title>
+</head>
+<body>
+    <header>
+        <div class="tytul">
+            <img src="obrazy/23714.jpg" alt="tytul">
+            <div class="tekst"><h1>Zapraszam do gry</h1></div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="podstrona1.html">Podstrona 1</a></li>
+            <li><a href="kolkoikrzyzyk.html">Gra Kółko i Krzyżyk</a></li>
+            <li><a href="#">Podstrona 3</a></li>
+          </ul>
+    </nav>
+    <main>
+        <article>
+        <table>
+            <tr>
+                <td class="cell" id="0"></td>
+                <td class="cell" id="1"></td>
+                <td class="cell" id="2"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="3"></td>
+                <td class="cell" id="4"></td>
+                <td class="cell" id="5"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="6"></td>
+                <td class="cell" id="7"></td>
+                <td class="cell" id="8"></td>
+            </tr>
+        </table>
+        <div class="center">
+            <form>
+                <input type="radio" id="single" name="mode" value="single" checked>
+                <label for="single">Tryb jednoosobowy</label>
+                <input type="radio" id="multi" name="mode" value="multi">
+                <label for="multi">Tryb dwuosobowy</label>
+            </form>
+        </div>
+        <div class="center"><button onClick="startGame()">Rozpocznij</button></div>
+        <div class="center"><div class="endgame"></div></div>
+        </article>
+      <script src="kolkoikrzyzyk.js"></script>
+      </main>
+    <footer>
+        <p class="copyright">Copyright &copy; by Maria Listwon</p>
+    </footer>
+</body>
+</html>

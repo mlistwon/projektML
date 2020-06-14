@@ -36,6 +36,7 @@ main{
     box-shadow: 3px 3px 10px #333333, -3px 3px 10px #333333;
 }
 
+
 article{
     padding-top: 3rem;
     padding-bottom: 4rem;
@@ -75,6 +76,7 @@ ul>li{
     padding-bottom: 20px;
     background-color: #333333;
     text-align: center;
+    /* transition-duration: 0.4s; */
 }
 
 ul>li:hover{
