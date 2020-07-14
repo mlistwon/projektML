@@ -158,28 +158,34 @@ nav ul li a span.rotate{
 }
 .main{
     z-index: -1;
+    position: absolute;
     max-width: 80%;
     margin-top: 35%;
     margin-left: 10%;
     margin-right: auto;
-    margin-bottom: 5rem;
-    background-color: whitesmoke;
-    box-shadow: 3px 3px 10px #333333, -3px 3px 10px #333333;
+    padding-bottom: 5rem;
+    
+    
 }
 .article{
     margin:auto;
-    max-width: 80%;
     padding-top: 3rem;
     padding-bottom: 3rem;
-
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 10px #333333, -3px 3px 10px #333333;
 }
 .article p{
-    margin-top: 6px;
+    /* max-width:80%; */
+    
     font-size: 1.8rem;
     text-align: justify;
 }
 .list ul{
+
     list-style: square;
+    list-style-position: inside;
     line-height: 3.5rem;
 }
 .list ul li{
@@ -189,15 +195,6 @@ nav ul li a span.rotate{
 .list ul li a{
     font-size: 1.8rem;
     text-align: justify;
-}
-.footer{
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    margin-left: auto;
-    bottom: 0;
-    z-index: -1;
-    color: whitesmoke;
 }
 
 h1{
