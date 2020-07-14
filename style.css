@@ -149,7 +149,7 @@ nav ul li a span.rotate{
     position: relative;
 }
 .header .text{
-    background-color: none;
+    background-color: transparent;
     text-shadow: 2px 2px 5px black;
     position: absolute;
     top: 50%;
