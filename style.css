@@ -108,7 +108,7 @@ nav ul ul li{
 nav ul ul li a{
     font-size: 1.7rem;
     color: #e6e6e6;
-    padding-left: 80px;
+    padding-left: 60px;
 }
 nav ul li.active ul li a{
     color: #e6e6e6;
@@ -181,6 +181,14 @@ nav ul li a span.rotate{
     
     font-size: 1.8rem;
     text-align: justify;
+}
+.article p a{
+    font-size: 1.8rem;
+    text-align: justify;
+}
+.article b{
+    font-weight: bolder;
+    font-size: 1.8rem;
 }
 .list ul{
 
