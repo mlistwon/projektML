@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Maria Listwon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>    
+    <title>Henna na włosy bez tajemnic</title>
+</head>
+<body>
+    <div class="menu-btn">
+        <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+        <div class="text">Menu</div>
+        <ul>
+            <li><a href="index.html">Główna</a></li>
+            <li><a href="henna.html">Czym jest henna?</a></li>
+            <li>
+                <a href="#" class="herb-btn">Podstawy
+                    <span class="fas fa-caret-down first"></span>
+                </a>
+                <ul class="herb-show">
+                    <li><a href="podstawy1.html">Wybór koloru/tonu</a></li>
+                    <li><a href="podstawy2.html">Przygotowanie henny</a></li>
+                    <li><a href="podstawy3.html">Przygotowanie włosów</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="adds-btn">Dodatki do henny
+                    <span class="fas fa-caret-down second"></span>
+                </a>
+                <ul class="adds-show">
+                    <li><a href="dod1.html">Zakwaszające</a></li>
+                    <li><a href="dod2.html">Tonujące</a></li>
+                    <li><a href="dod3.html">Zioła niebarwiące</a></li>
+                    <li><a href="dod4.html">Nawilżające</a></li>
+                </ul>
+            </li>
+            <li><a href="linki.html">Przydatne linki</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="header">
+            <img class="title-img" src="images/title-img2.jpg">
+            <div class="text"><h1>Hennowanie bez tajemnic</h1></div>
+        </div>
+        <div class="main">
+            <div class="article">
+                <h2>Witaj!</h2>
+                <p>Chciałabym zaprosić Cię na przygodę z farbowaniem włosów henną. 
+                Jeśli masz ochotę na zmianę i nie straszne Ci rudości, to zdecydowanie jest to temat dla Ciebie. 
+                Możliwe, że początkowo uznasz to za nieco skomplikowane, wręcz „magiczne”, ale zapewniam Cię, że kiedy już zaczniesz hennować, 
+                nie będziesz chciała z tego zrezygnować.</p>
+
+            </div>
+        </div>
+            <div class="footer">
+                <p class="copyright">Copyright &copy; by Maria Listwon</p>
+            </div>
+    </div>
+    
+    <script>
+        $('.menu-btn').click(function(){
+            $(this).toggleClass("click");
+            $('.sidebar').toggleClass("show");
+        });
+        $('.herb-btn').click(function(){
+            $('nav ul .herb-show').toggleClass("show1");
+            $('nav ul .first').toggleClass("rotate");
+        });
+        $('.adds-btn').click(function(){
+            $('nav ul .adds-show').toggleClass("show2");
+            $('nav ul .second').toggleClass("rotate");
+        });
+        $('nav ul li').click(function(){
+            $(this).addClass("active").siblings().removeClass("active")
+        })
+    </script>
+</body>
+</html>

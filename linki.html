@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Maria Listwon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>    
+    <title>Henna na włosy bez tajemnic</title>
+</head>
+<body>
+    <div class="menu-btn">
+        <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+        <div class="text">Menu</div>
+        <ul>
+            <li><a href="index.html">Główna</a></li>
+            <li><a href="henna.html">Czym jest henna?</a></li>
+            <li>
+                <a href="#" class="herb-btn">Podstawy
+                    <span class="fas fa-caret-down first"></span>
+                </a>
+                <ul class="herb-show">
+                    <li><a href="podstawy1.html">Wybór koloru/tonu</a></li>
+                    <li><a href="podstawy2.html">Przygotowanie henny</a></li>
+                    <li><a href="podstawy3.html">Przygotowanie włosów</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="adds-btn">Dodatki do henny
+                    <span class="fas fa-caret-down second"></span>
+                </a>
+                <ul class="adds-show">
+                    <li><a href="dod1.html">Zakwaszające</a></li>
+                    <li><a href="dod2.html">Tonujące</a></li>
+                    <li><a href="dod3.html">Zioła niebarwiące</a></li>
+                    <li><a href="dod4.html">Nawilżające</a></li>
+                </ul>
+            </li>
+            <li><a href="linki.html">Przydatne linki</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="header">
+            <img class="title-img" src="images/title-img2.jpg">
+            <div class="text"><h1>Hennowanie bez tajemnic</h1></div>
+        </div>
+        <div class="main">
+            <div class="article">
+                <h2>Przydatne linki</h2>
+                <h3>Popularne sklepy z henną</h3>
+                <div class="list">
+                    <ul>
+                        <li><a href="https://www.hebe.pl">Drogeria Hebe</a> - drogeria stacjonarna i online, dostępne henny Sattva i Venita</li>
+                        <li><a href="https://www.drogerienatura.pl">Drogeria Natura</a> - drogeria stacjonarna i online, dostępne henny Orientana, Sattva i Venita</li>
+                        <li><a href="https://kontigo.com.pl">Drogeria Kontigo</a> - drogeria stacjonarna i online, dostępne henny Orientana i Sattva</li>
+                        <li><a href="https://napieknewlosy.pl">Napięknewłosy.pl</a> - sklep internetowy z różnorodnym asortymentem "włosowym", w tym duży wybór henn oraz dodatków</li>
+                        <li><a href="https://biorganic24.pl">Biorganic24</a> - sklep internetowy z naturalnymi kosmetykami, duży wybór henn i dodatków</li>
+                        <li><a href="https://rafex.eu">Rafex</a> - hurtownia ziół, herbat i przypraw, sprzedaż hurtowa i detaliczna, w ofercie mają miksohennę oraz dodatki</li>
+                        <li><a href="https://wizaz24.pl">Wizaz24.pl</a> - drogeria internetowa z szerokim asortymentem włosowym, w tym henny popularnych producentów (Sattva, Orientana, Khadi)</li>
+                    </ul>
+                </div>
+                <h3>Bazy wiedzy</h3>
+                <div class="list">
+                    <ul>
+                        <li><a href="https://wwwlosy.pl">wwwlosy.pl</a> - blog Agnieszki Niedziałek o pielęgnacji włosów, obszerna sekcja dotycząca henny, 
+                            poza tym również polecam kanał Agnieszki <a href="https://www.youtube.com/channel/UC9d_YMBa-jGetCazqGUAQhQ">WWWLOSY.PL</a></li>
+                        <li><a href="http://henna-miksologia.blogspot.com/">Henna-miksologia</a> - blog Justyny Chmury o farbowaniu ziołami, kopalnia wiedzy</li>
+                        <li><a href="https://www.facebook.com/groups/909033245897127/">Grupa FB o farbowaniu ziołami</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            <div class="footer">
+                <p class="copyright">Copyright &copy; by Maria Listwon</p>
+            </div>
+    </div>
+    
+    <script>
+        $('.menu-btn').click(function(){
+            $(this).toggleClass("click");
+            $('.sidebar').toggleClass("show");
+        });
+        $('.herb-btn').click(function(){
+            $('nav ul .herb-show').toggleClass("show1");
+            $('nav ul .first').toggleClass("rotate");
+        });
+        $('.adds-btn').click(function(){
+            $('nav ul .adds-show').toggleClass("show2");
+            $('nav ul .second').toggleClass("rotate");
+        });
+        $('nav ul li').click(function(){
+            $(this).addClass("active").siblings().removeClass("active")
+        })
+    </script>
+</body>
+</html>
